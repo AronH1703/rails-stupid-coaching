@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h1 class="display-4">Stupid Coaching</h1>
+
+  <!-- User Question Section -->
+  <div class="card my-4 p-3">
+    <p class="font-italic">You asked:</p>
+    <p class="blockquote pb-2"><%= @question %></p>
+    <footer class="blockquote-footer">— You</footer>
+  </div>
+
+  <!-- Coach Answer Section -->
+  <div class="card my-4 p-3 bg-light">
+    <p class="font-weight-bold">Coach says:</p>
+    <p class="blockquote text-success pb-2"><%= @answer %></p>
+    <footer class="blockquote-footer">— Your coach</footer>
+  </div>
+
+  <!-- Link to Ask Again -->
+  <div class="text-center mt-4">
+    <%= link_to "Ask a new question", "http://localhost:3000/ask#", class: "btn btn-primary btn-sm" %>
+  </div>
+</div>
